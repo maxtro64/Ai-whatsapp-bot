@@ -37,7 +37,7 @@ while True:
   if is_last_meassage_from_sender(chat_history):
 
     try:
-      genai.configure(api_key="AIzaSyADqSruoXH9ZVBLvOmI5RF65IaX_0xgmeE") #Your actual API Key here.  DO NOT HARDCODE API KEYS IN PUBLIC REPOSITORIES.
+      genai.configure(api_key="YOUR_KEY") 
       model = genai.GenerativeModel("gemini-1.5-flash")
       role =  "You are a person named shivam yadav a 20 years male   who speaks Hinglish and reply in short .You are from India and  you are a college student and coder .You analyze chat history and respond like shivam in a funny way .output should be the next response as shivam "
       prompt = f"{role}\nChat History:\n{newchat_history}\nShivam's reply:"
